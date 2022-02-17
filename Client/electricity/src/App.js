@@ -1,9 +1,11 @@
 import './App.css';
 import BuyToken from "./components/BuyToken"
+// import NavBar from './components/Navbar';
 function App() {
   return (
     <div className="App">
-  <BuyToken/>
+    {/* <NavBar/>*/}
+    <BuyToken/>
     </div>
   );
 }
