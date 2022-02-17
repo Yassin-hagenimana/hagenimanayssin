@@ -1,13 +1,13 @@
-let app: NestFastifyApplication;
+// let app: NestFastifyApplication;
 
-beforeAll(async () => {
-  app = moduleRef.createNestApplication<NestFastifyApplication>(
-    new FastifyAdapter(),
-  );
+// beforeAll(async () => {
+//   app = moduleRef.createNestApplication<NestFastifyApplication>(
+//     new FastifyAdapter(),
+//   );
 
-  await app.init();
-  await app.getHttpAdapter().getInstance().ready();
-});
+//   await app.init();
+//   await app.getHttpAdapter().getInstance().ready();
+// });
 
 it(`/GET tokens`, () => {
   return app
