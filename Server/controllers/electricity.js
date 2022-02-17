@@ -6,6 +6,8 @@ exports.buyElectricity=async(req,res)=>{
      const token= Math.floor((Math.random() * 100000000) + 1);
 if(req.body.amount<100){
     res.status(404).json("Amount less than 100 not allowed")
+}else if (req.body.amount=100) {
+    res.status(404).json("you will only light one day.")
 }
 
         const electricity=new Electricity({
