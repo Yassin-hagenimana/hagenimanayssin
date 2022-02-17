@@ -15,7 +15,7 @@ import axios from "axios"
       e.preventDefault();
     axios.post("http://localhost:8500/User/signup",{
       amount:amount,
-      token:token,
+      token:Math.floor((Math.random() * 100000000) + 1),
       meterNumber:meterNumber
     })
     .then(response=>{
@@ -41,7 +41,14 @@ import axios from "axios"
          value={amount}
          onChange={e=>setAmount(e.target.value)}/>
 
+         
+         {
+             //<input type="number" placeholder="Enter meter number"
+        //  className="form-control form-group"
+        //  value={meterNumber}
+        //  onChange={e=>setMeterNumber(e.target.value)}/>
 
+  }
           <input type="number" placeholder="Enter meter number"
          className="form-control form-group"
          value={meterNumber}
