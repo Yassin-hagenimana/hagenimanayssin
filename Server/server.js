@@ -20,7 +20,7 @@ const Electricity = require("./routes/meter.routes");
 app.use("/api/tokens", Electricity);
 
 app.get("/", (req, res) => {
-	res.status(200).json({success: true,message: "Welcome to token generation application.",
+	res.status(200).json({success: true,message: "Welcome to token Electricity application.",
 	});
 });
 
