@@ -1,0 +1,26 @@
+version: '3'
+services:
+  frontend:
+    build: ./Client
+    ports:
+      - "8081:8080"
+    depends_on:
+      - "Server"
+    links:
+      - Server
+  backend:
+    build: ./Server/
+    ports:
+      - "5000:8080"
+    depends_on:
+      - "mongo"
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+
+
+
+
+
+
