@@ -21,5 +21,5 @@ token:{
 })
 
 
-const Electricity=mongoose.model("Comments",electricitySchema)
+const Electricity=mongoose.model("Electricity",electricitySchema)
 module.exports=Electricity

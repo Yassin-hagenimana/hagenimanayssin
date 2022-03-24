@@ -15,7 +15,7 @@ app.use(cors());
 
 
 
-const Electricity = require("./routes/token");
+const Electricity = require("./routes/meter.routes");
 
 app.use("/api/tokens", Electricity);
 
