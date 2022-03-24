@@ -1,6 +1,7 @@
 version: '3'
 services:
   frontend:
+    image: hyassin509/frontend:latest
     build: ./Client/
     ports:
       - "8081:8080"
@@ -9,6 +10,7 @@ services:
     links:
       - Server
   backend:
+    image: hyassin509/backend:latest
     build: ./Server/
     ports:
       - "5000:8080"
